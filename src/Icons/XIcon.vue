@@ -18,7 +18,7 @@
 // Vue
 import { defineComponent } from 'vue'
 // Types
-import StylingType from '@/Types/StylingType'
+import StylingType from '../Types/StylingType'
 
 export default defineComponent({
   name: 'XIcon',

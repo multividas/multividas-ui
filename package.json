@@ -10,6 +10,18 @@
   "author": "soulaimane yahya <contact@soulaimaneyahya.com> (https://soulaimaneyahya.com/)",
   "license": "MIT",
   "type": "module",
+  "main": "multividas-ui.js",
+  "module": "src/main.js",
+  "types": "src/main.js",
+  "exports": {
+    ".": {
+      "import": "./src/main.js",
+      "require": "./multividas-ui.js"
+    },
+    "./dist/main.esm.js": "./src/main.js",
+    "./dist/main.js": "./multividas-ui.js",
+    "./dist/main.umd.js": "./multividas-ui.umd.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -21,15 +33,6 @@
   "engines": {
     "node": "^22.0.0"
   },
-  "exports": {
-    ".": {
-      "import": "./src/main.js",
-      "require": "./src/main.js"
-    }
-  },
-  "main": "./src/main.js",
-  "module": "./src/main.js",
-  "types": "./src/main.js",
   "dependencies": {
     "vue": "^3.4.21"
   },
