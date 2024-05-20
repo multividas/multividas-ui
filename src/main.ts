@@ -23,7 +23,9 @@ import BellIcon from './Icons/BellIcon.vue'
 import BellFillIcon from './Icons/BellFillIcon.vue'
 import BellPlusIcon from './Icons/BellPlusIcon.vue'
 // multvidas
+// articles
 import ArticleIcon from './Icons/ArticleIcon.vue'
+import ArticleFillIcon from './Icons/ArticleFillIcon.vue'
 
 export {
   // icons
@@ -49,5 +51,6 @@ export {
   BellFillIcon,
   BellPlusIcon,
   // multividas
-  ArticleIcon
+  ArticleIcon,
+  ArticleFillIcon
 }
