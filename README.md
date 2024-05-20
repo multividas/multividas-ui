@@ -2,10 +2,11 @@
 
 Vue UI library
 
+<a href="https://developers.multividas.com/multividas-ui/introduction/getting-started">Explore Multividas UI docs »</a>
+
 ---
 
-Need helps? Reach me out
+> Developer: Soulaimane Yahya
 
 > Email: multividasdotcom@gmail.com
 
-All the best :beer:
