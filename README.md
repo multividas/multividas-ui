@@ -2,11 +2,15 @@
 
 Vue UI library
 
-<a href="https://developers.multividas.com/multividas-ui/introduction/getting-started">Explore Multividas UI docs »</a>
+## Documentation
+
+Visit <https://developers.multividas.com/multividas-ui/introduction/getting-started> to view the documentation.
+
+## License
+
+Licensed under the [MIT license](/LICENSE).
 
 ---
-
-> Developer: Soulaimane Yahya
 
 > Email: multividasdotcom@gmail.com
 

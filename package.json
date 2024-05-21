@@ -1,15 +1,19 @@
 {
   "name": "@multividasdotcom/multividas-ui",
+  "type": "module",
   "version": "1.0.8",
+  "license": "MIT",
   "description": "Vue UI library",
   "keywords": [
     "multividas",
-    "multividasdotcom",
-    "threads"
+    "multividas ui"
   ],
-  "author": "soulaimane yahya <contact@soulaimaneyahya.com> (https://soulaimaneyahya.com/)",
-  "license": "MIT",
-  "type": "module",
+  "authors": [
+    {
+      "name": "soulaimaneyahya",
+      "email": "contact@soulaimaneyahya.com"
+    }
+  ],
   "main": "multividas-ui.js",
   "module": "src/main.js",
   "types": "src/main.js",
@@ -30,9 +34,6 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
-  "engines": {
-    "node": "^22.0.0"
-  },
   "dependencies": {
     "vue": "^3.4.21"
   },
@@ -52,5 +53,9 @@
     "typescript": "~5.4.0",
     "vite": "^5.2.8",
     "vue-tsc": "^2.0.11"
+  },
+  "engines": {
+    "nvm": "22",
+    "node": "^22.0.0"
   }
 }
