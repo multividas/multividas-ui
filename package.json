@@ -15,24 +15,29 @@
     }
   ],
   "main": "multividas-ui.js",
-  "module": "src/main.js",
-  "types": "src/main.js",
+  "module": "src/index.js",
+  "types": "src/index.js",
   "exports": {
     ".": {
-      "import": "./src/main.js",
+      "import": "./src/index.js",
       "require": "./multividas-ui.js"
     },
-    "./dist/main.esm.js": "./src/main.js",
-    "./dist/main.js": "./multividas-ui.js",
-    "./dist/main.umd.js": "./multividas-ui.umd.js"
+    "./dist/index.esm.js": "./src/index.js",
+    "./dist/index.js": "./multividas-ui.js",
+    "./dist/index.umd.js": "./multividas-ui.umd.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "bump": "bumpp package.json --commit \"[chore]: Release v\" --push --tag",
+    "release": "npm run build && npm run bump && npm publish --access public"
   },
   "dependencies": {
     "vue": "^3.4.21"
@@ -46,13 +51,23 @@
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/tsconfig": "^0.5.1",
+    "bumpp": "^9.4.1",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.5",
     "typescript": "~5.4.0",
+    "unbuild": "^2.0.0",
     "vite": "^5.2.8",
     "vue-tsc": "^2.0.11"
+  },
+  "bugs": {
+    "url": "https://github.com/multividas/multividas-ui/issues"
+  },
+  "homepage": "https://github.com/multividas/multividas-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multividas/multividas-ui.git"
   },
   "engines": {
     "nvm": "22",

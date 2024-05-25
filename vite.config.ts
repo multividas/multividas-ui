@@ -8,7 +8,7 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: fileURLToPath(new URL('./src/main.ts', import.meta.url)),
+      entry: fileURLToPath(new URL('./src/index.ts', import.meta.url)),
       name: 'Multividas-UI'
     },
     rollupOptions: {
@@ -18,11 +18,6 @@ export default defineConfig({
           vue: 'Vue'
         }
       }
-    }
-  },
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   }
 });
