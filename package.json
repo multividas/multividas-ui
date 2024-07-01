@@ -1,7 +1,7 @@
 {
   "name": "@multividasdotcom/multividas-ui",
   "type": "module",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "license": "MIT",
   "description": "Vue UI library",
   "keywords": [
@@ -14,17 +14,17 @@
       "email": "contact@soulaimaneyahya.com"
     }
   ],
-  "main": "multividas-ui.js",
-  "module": "src/index.js",
-  "types": "src/index.js",
+  "main": "dist/multividas-ui.cjs.js",
+  "module": "dist/multividas-ui.es.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./src/index.js",
-      "require": "./multividas-ui.js"
+      "import": "./dist/multividas-ui.es.js",
+      "require": "./dist/multividas-ui.cjs.js"
     },
-    "./dist/index.esm.js": "./src/index.js",
-    "./dist/index.js": "./multividas-ui.js",
-    "./dist/index.umd.js": "./multividas-ui.umd.js"
+    "./dist/index.esm.js": "./dist/multividas-ui.es.js",
+    "./dist/index.js": "./dist/multividas-ui.cjs.js",
+    "./dist/index.umd.js": "./dist/multividas-ui.umd.js"
   },
   "scripts": {
     "dev": "vite",

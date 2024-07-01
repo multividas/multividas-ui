@@ -9,7 +9,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: fileURLToPath(new URL('./src/index.ts', import.meta.url)),
-      name: 'Multividas-UI'
+      name: 'MultividasUI',
+      fileName: (format) => `multividas-ui.${format}.js`,
+      formats: ['es', 'cjs', 'umd']
     },
     rollupOptions: {
       external: ['vue'],
@@ -21,3 +23,4 @@ export default defineConfig({
     }
   }
 });
+
